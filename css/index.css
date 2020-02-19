@@ -4,7 +4,7 @@ body {
 
 .nav-bar {
   display: block;
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 90px;
   background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.67));
@@ -67,6 +67,29 @@ body {
   margin-left: 10px;
 }
 
+.menu {
+  display: none;
+  width: 80%;
+  text-align: right;
+  vertical-align: bottom;
+}
+.menu li {
+  vertical-align: middle;
+  list-style-type: none;
+  display: inline;
+  margin-left: 3%;
+}
+.menu li a {
+  display: inline;
+  color: #000000;
+  text-decoration: none;
+}
+@media (min-width: 1023px) {
+  .menu {
+    display: inline-block;
+  }
+}
+
 .img-logo-vitalinea {
   position: relative;
   margin-top: 18px;
@@ -86,17 +109,48 @@ body {
   position: initial;
   width: 100%;
   height: auto;
-  background-image: linear-gradient(20deg, #ffffff 0%, #ffffff 0%, transparent 0%), linear-gradient(8deg, #ffffff 0%, #ffffff 9%, #ebacac 0%, #f9e6e6);
+  background-image: linear-gradient(20deg, #ffffff 0%, #ffffff 0%, transparent 0%), linear-gradient(5deg, #ffffff 0%, #ffffff 6%, #ebacac 0%, #f9e6e6);
+}
+@media (min-width: 767px) {
+  .BG-mob {
+    background-image: linear-gradient(20deg, #ffffff 0%, #ffffff 0%, transparent 0%), linear-gradient(5deg, #ffffff 0%, #ffffff 8%, #ebacac 0%, #f9e6e6);
+  }
+}
+@media (min-width: 1023px) {
+  .BG-mob {
+    background-image: linear-gradient(20deg, #ffffff 0%, #ffffff 0%, transparent 0%), linear-gradient(6deg, #ffffff 0%, #ffffff 12%, #ebacac 0%, #f9e6e6);
+  }
+}
+@media (min-width: 1080px) {
+  .BG-mob {
+    background-image: linear-gradient(20deg, #ffffff 0%, #ffffff 0%, transparent 0%), linear-gradient(5deg, #ffffff 0%, #ffffff 12%, #ebacac 0%, #f9e6e6);
+  }
+}
+@media (min-width: 1319px) {
+  .BG-mob {
+    background-image: linear-gradient(20deg, #ffffff 0%, #ffffff 0%, transparent 0%), linear-gradient(3deg, #ffffff 0%, #ffffff 10%, #ebacac 0%, #f9e6e6);
+  }
 }
 
 .product-img {
   display: block;
   text-align: center;
+  box-sizing: border-box;
+  margin-top: 10%;
+}
+@media (min-width: 1023px) {
+  .product-img {
+    margin-top: 0%;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 10%;
+    width: 39%;
+    box-sizing: border-box;
+  }
 }
 
 .fresa-bebible-1-1 {
   padding-top: 24.5px;
-  transform: rotate(-365deg);
 }
 
 .product-description {
@@ -107,6 +161,15 @@ body {
   font-weight: 400;
   color: #000000;
   padding: 1%;
+}
+@media (min-width: 1023px) {
+  .product-description {
+    margin-top: 220px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    vertical-align: top;
+  }
 }
 .product-description ul {
   padding: 0;
@@ -135,6 +198,13 @@ body {
   text-align: left;
 }
 
+@media (min-width: 1023px) {
+  .p-btn-primary {
+    text-align: left;
+    margin-left: 2%;
+  }
+}
+
 .btn-primary {
   margin-top: 20px;
   font-weight: 400;
@@ -149,7 +219,7 @@ body {
     height: 90px;
   }
 }
-@media (min-width: 1080px) {
+@media (min-width: 1023px) {
   .btn-primary {
     width: 243px;
     font-size: 14px;
@@ -157,8 +227,27 @@ body {
   }
 }
 
-.nutrimental-info .p-nutrimental-info {
-  letter-spacing: 7.41px;
+@media (min-width: 1023px) {
+  .nutrimental {
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 1023px) {
+  .nutrimental .nutrimental-info {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 35%;
+    margin-left: 15%;
+    vertical-align: top;
+  }
+}
+.nutrimental .p-nutrimental-info {
+  letter-spacing: 6.41px;
+}
+@media (min-width: 1023px) {
+  .nutrimental .p-nutrimental-info {
+    margin-left: 8%;
+  }
 }
 
 .img-fresas-01 {
@@ -177,17 +266,88 @@ body {
   }
 }
 
-.img-fresa {
+.img-fresas-4 {
+  position: absolute;
+  left: 0;
+}
+@media (min-width: 320px) {
+  .img-fresas-4 {
+    visibility: hidden;
+  }
+}
+@media (min-width: 1023px) {
+  .img-fresas-4 {
+    left: 0;
+    visibility: visible;
+  }
+}
+@media (min-width: 1080px) {
+  .img-fresas-4 {
+    left: 0;
+    visibility: visible;
+    bottom: 15%;
+  }
+}
+
+.img-fresas-5 {
+  position: absolute;
+  left: 0;
+}
+@media (min-width: 320px) {
+  .img-fresas-5 {
+    visibility: hidden;
+  }
+}
+@media (min-width: 1023px) {
+  .img-fresas-5 {
+    left: 0;
+    visibility: visible;
+  }
+}
+@media (min-width: 1080px) {
+  .img-fresas-5 {
+    left: 0;
+    visibility: visible;
+  }
+}
+
+.img-fresas-9 {
   position: absolute;
 }
 @media (min-width: 320px) {
+  .img-fresas-9 {
+    visibility: hidden;
+  }
+}
+@media (min-width: 1023px) {
+  .img-fresas-9 {
+    left: 12%;
+    margin-top: 53%;
+    visibility: visible;
+  }
+}
+@media (min-width: 1080px) {
+  .img-fresas-9 {
+    left: 12%;
+    margin-top: 38%;
+    visibility: visible;
+  }
+}
+
+.img-fresa {
+  position: absolute;
+  left: 0;
+}
+@media (min-width: 1023px) {
   .img-fresa {
     left: 0;
+    margin-top: 50%;
   }
 }
 @media (min-width: 1080px) {
   .img-fresa {
     left: 0;
+    margin-top: 35%;
   }
 }
 
@@ -195,6 +355,13 @@ body {
   background-color: #fafafa;
   margin-left: 3%;
   margin-right: 3%;
+}
+@media (min-width: 1023px) {
+  .bg-tablas {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 35%;
+  }
 }
 .bg-tablas table {
   width: 100%;
@@ -208,10 +375,18 @@ body {
   text-align: right;
   color: #78246d;
   border-collapse: separate;
-  border-spacing: 5px;
+  border-spacing: 2px;
+}
+@media (min-width: 1023px) {
+  .bg-tablas table {
+    font-size: 16px;
+  }
+}
+.bg-tablas table tr:nth-child(2n) {
+  background-color: #f8f8f8;
 }
 .bg-tablas table tr td {
-  padding: 5px 10px 5px 10px;
+  padding: 2px 5px 2px 5px;
 }
 .bg-tablas table tr td:first-child {
   width: 70%;
@@ -237,21 +412,67 @@ body {
 .certificate-logos {
   text-align: center;
 }
+@media (min-width: 1023px) {
+  .certificate-logos {
+    position: absolute;
+    bottom: 35%;
+    left: 51%;
+  }
+}
+@media (min-width: 1319px) {
+  .certificate-logos {
+    bottom: 35%;
+  }
+}
 .certificate-logos .fmd-interior {
   width: 120px;
   height: 120px;
+}
+@media (min-width: 767px) {
+  .certificate-logos .fmd-interior {
+    width: 80px;
+    height: 80px;
+  }
 }
 .certificate-logos .no-sugar-ribbon {
   width: 152px;
   height: 120px;
 }
-.certificate-logos .oval-d {
-  width: 70px;
-  height: 70px;
+@media (min-width: 767px) {
+  .certificate-logos .no-sugar-ribbon {
+    width: 110px;
+    height: 80px;
+  }
+}
+@media (min-width: 1023px) {
+  .certificate-logos .fmd-interior {
+    width: 62px;
+    height: 62px;
+  }
+  .certificate-logos .no-sugar-ribbon {
+    width: 92px;
+    height: 62px;
+  }
+}
+
+.arrow-down {
+  text-align: center;
+}
+.arrow-down .oval-d {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  padding: 20px;
+  padding: 15px;
   background-color: #78246d;
   transform: rotate(0deg);
+}
+@media (min-width: 1023px) {
+  .arrow-down .oval-d .oval-d {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #78246d;
+    transform: rotate(0deg);
+  }
 }
 
 .bg-familia-vitalinea {
@@ -263,7 +484,7 @@ body {
   white-space: nowrap;
 }
 .bg-familia-vitalinea ul {
-  padding-top: 20%;
+  text-align: center;
 }
 .bg-familia-vitalinea ul li {
   display: inline;
@@ -295,22 +516,69 @@ body {
   line-height: normal;
   letter-spacing: normal;
   color: #78246d;
-  text-align: right;
+  text-align: center;
   padding-top: 7%;
-  margin-right: 15%;
 }
 
 .footer {
   margin-top: 2%;
   margin-left: 3%;
   margin-right: 3%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+.footer .privacity p {
+  text-align: center;
+  margin: 0;
+  font-size: 9px;
+}
+@media (min-width: 1023px) {
+  .footer .privacity p {
+    visibility: hidden;
+  }
+}
+.footer .all-rights-reserved p {
+  margin: 0;
+  font-size: 10px;
+  text-align: center;
+}
+@media (min-width: 1023px) {
+  .footer .all-rights-reserved p {
+    visibility: hidden;
+  }
 }
 .footer .logo-danone-footer {
   display: inline-block;
+  width: 49%;
+  text-align: left;
+  font-family: OpenSans;
+}
+.footer .logo-danone-footer img {
+  width: 77px;
+  height: 77px;
+}
+.footer .logo-danone-footer p {
+  display: inline-block;
+  vertical-align: top;
+}
+@media (min-width: 1023px) {
+  .footer .logo-danone-footer p {
+    visibility: visible;
+  }
 }
 .footer .logo-footer {
   display: inline-block;
-  margin-left: 84%;
+  width: 49%;
+  text-align: right;
+}
+.footer .logo-footer img {
+  width: 89px;
+  height: 40px;
+  margin-bottom: 25px;
 }
 
 @font-face {
