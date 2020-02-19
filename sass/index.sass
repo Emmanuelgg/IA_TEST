@@ -42,11 +42,9 @@ body
         right: 10%
 
 .mobile-menu
-    @media (min-width: #{$breakpoint-md})
-        display: none
     display: inline-block
     margin-left: 73%
-    li
+    li.bar
         &:nth-child(2)
             width: 20px
             margin-left: 10px
@@ -57,6 +55,22 @@ body
         margin-top: 5px
         padding: 2px 5px 2px 5px
         background-color: $menu-color
+    @media (min-width: #{$breakpoint-md})
+        display: none
+
+#mobile-menu-links
+    display: none
+    margin-top: 5px
+    padding: 2px 5px 2px 5px
+    background-color: #ffffffb8
+    li
+        padding: 5px
+        list-style-type: none
+        a
+            display: inline
+            color: #000000
+            text-decoration: none
+
 .menu
     display: none
     width: 80%
